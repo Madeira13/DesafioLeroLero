@@ -65,12 +65,12 @@ let leros = [
 ]
 
 
-class LeroLeroGenerator: NSObject {
+public class LeroLeroGenerator: NSObject {
     
     public class func leroLeroGenerator() -> String {
         let count = leros.count
         let numeroSorteio = Int(arc4random_uniform(UInt32(count)))
-        return leros[0][numeroSorteio] + leros[1][numeroSorteio] + leros[2][numeroSorteio] + leros[3][numeroSorteio] 
+        return leros[0][numeroSorteio] + leros[1][numeroSorteio] + leros[2][numeroSorteio] + leros[3][numeroSorteio]
 
     }
 }
